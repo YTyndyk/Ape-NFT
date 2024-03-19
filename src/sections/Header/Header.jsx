@@ -13,9 +13,32 @@ const Header = () => {
 	return (
 		<header className={styles.header}>
 			<nav>
-				<a href="/">
-					<img src={Logo} alt="logo" width={48} height={32} />
-				</a>
+				<div className={styles.navigation}>
+					<a href="/">
+						<img src={Logo} alt="logo" className="styles.logo" />
+					</a>
+					<button className={styles.btnMenu}>MENU</button>
+				</div>
+
+				<ul hidden>
+					{navLinks.map((item) => (
+						<li key={item.label}>
+							<button className={styles.navMenu}>
+								<a
+									href={item.href}
+									className={`font-montserrat leading-normal text-lg hover:text-coral-red ${
+										activeLink === item.label
+											? "text-coral-red"
+											: "text-slate-gray"
+									}`}
+									onClick={() => handleLinkClick(item.label)}
+								>
+									{item.label}
+								</a>
+							</button>
+						</li>
+					))}
+				</ul>
 			</nav>
 		</header>
 	);
