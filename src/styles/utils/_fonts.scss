@@ -1,134 +1,257 @@
 @font-face {
-	font-family: "Right Grotesk Compact Black";
-	src: local("Right Grotesk Compact Black"),
-		url("src/styles/utils/fonts/RightGrotesk/RightGrotesk-CompactBlack.otf");
+	font-family: "RightGroteskCompactBlack";
+	src: url("/src/styles/utils/fonts/RightGrotesk/RightGroteskCompactBlack.eot");
+	src: local("RightGroteskCompactBlack"),
+		url("/src/styles/utils/fonts/RightGrotesk/RightGroteskCompactBlack.eott")
+			format("embedded-opentype"),
+		url("/src/styles/utils/fonts/RightGrotesk/RightGroteskCompactBlack.woff2")
+			format("woff2"),
+		url("/src/styles/utils/fonts/RightGrotesk/RightGroteskCompactBlack.woff")
+			format("woff"),
+		url("/src/styles/utils/fonts/RightGrotesk/RightGroteskCompactBlack.ttf")
+			format("truetype");
 }
 @font-face {
-	font-family: "Right Grotesk Medium";
-	src: local("Right Grotes Medium"),
-		url("src/styles/utils/fonts/RightGrotesk/RightGrotesk-Medium.otf");
+	font-family: "RightGrotesk";
+	src: url("/src/styles/utils/fonts/RightGrotesk/RightGroteskMedium.eot");
+	src: local("RightGroteskMedium"),
+		url("/src/styles/utils/fonts/RightGrotesk/RightGroteskMedium.eot")
+			format("embedded-opentype"),
+		url("/src/styles/utils/fonts/RightGrotesk/RightGroteskMedium.woff2")
+			format("woff2"),
+		url("/src/styles/utils/fonts/RightGrotesk/RightGroteskMedium.woff")
+			format("woff"),
+		url("/src/styles/utils/fonts/RightGrotesk/RightGroteskMedium.ttf")
+			format("truetype");
+	font-weight: 500;
+	font-style: normal;
 }
 @font-face {
-	font-family: "Right Grotesk NarrowLight";
-	src: local("Right Grotesk NarrowLight"),
-		url("src/styles/utils/fonts/RightGrotesk/RightGrotesk-NarrowLight.otf");
+	font-family: "RightGroteskNarrowLight";
+	src: url("/src/styles/utils/fonts/RightGrotesk/RightGroteskNarrowLight.eot");
+	src: local("RightGroteskNarrowLight"),
+		url("/src/styles/utils/fonts/RightGrotesk/RightGroteskNarrowLight.eot")
+			format("embedded-opentype"),
+		url("/src/styles/utils/fonts/RightGrotesk/RightGroteskNarrowLight.woff2")
+			format("woff2"),
+		url("/src/styles/utils/fonts/RightGrotesk/RightGroteskNarrowLight.woff")
+			format("woff"),
+		url("/src/styles/utils/fonts/RightGrotesk/RightGroteskNarrowLight.ttf")
+			format("truetype");
 }
 @font-face {
-	font-family: "Right Grotesk spatialblack";
-	src: local("Right Grotesk spatialblack"),
-		url("src/styles/utils/fonts/RightGrotesk/rightgrotesk-spatialblack.otf");
+	font-family: "RightGroteskspatialblack";
+	src: url("/src/styles/utils/fonts/RightGrotesk/rightgroteskspatialblack.eot");
+	src: local("RightGroteskspatialblack"),
+		url("/src/styles/utils/fonts/RightGrotesk/rightgroteskspatialblack.eot")
+			format("embedded-opentype"),
+		url("/src/styles/utils/fonts/RightGrotesk/rightgroteskspatialblack.woff2")
+			format("woff2"),
+		url("/src/styles/utils/fonts/RightGrotesk/rightgroteskspatialblack.woff")
+			format("woff"),
+		url("/src/styles/utils/fonts/RightGrotesk/rightgroteskspatialblack.ttf")
+			format("truetype");
 }
 @font-face {
-	font-family: "Right Grotesk TightMedium";
-	src: local("Right Grotesk TightMedium"),
-		url("src/styles/utils/fonts/RightGrotesk/RightGrotesk-TightMedium.otf");
+	font-family: "RightGroteskTightMedium";
+	src: url("/src/styles/utils/fonts/RightGrotesk/RightGroteskTightMedium.eot");
+	src: local("RightGroteskTightMedium"),
+		url("/src/styles/utils/fonts/RightGrotesk/RightGroteskTightMedium.eot")
+			format("embedded-opentype"),
+		url("/src/styles/utils/fonts/RightGrotesk/RightGroteskTightMedium.woff2")
+			format("woff2"),
+		url("/src/styles/utils/fonts/RightGrotesk/RightGroteskTightMedium.woff")
+			format("woff"),
+		url("/src/styles/utils/fonts/RightGrotesk/RightGroteskTightMedium.ttf")
+			format("truetype");
 }
 @font-face {
-	font-family: "Right Grotesk WideMedium";
-	src: local("Right Grotesk WideMedium"),
-		url("src/styles/utils/fonts/RightGrotesk/RightGrotesk-WideMedium.otf");
+	font-family: "RightGroteskWideMedium";
+	src: url("/src/styles/utils/fonts/RightGrotesk/RightGroteskWideMedium.eot");
+	src: local("RightGroteskWideMedium"),
+		url("/src/styles/utils/fonts/RightGrotesk/RightGroteskWideMedium.eot")
+			format("embedded-opentype"),
+		url("/src/styles/utils/fonts/RightGrotesk/RightGroteskWideMedium.woff2")
+			format("woff2"),
+		url("/src/styles/utils/fonts/RightGrotesk/RightGroteskWideMedium.woff")
+			format("woff"),
+		url("/src/styles/utils/fonts/RightGrotesk/RightGroteskWideMedium.ttf")
+			format("truetype");
 }
-
 // 	font-family: 'Biroscript';
-
 @font-face {
-	font-family: "Biro Script Plus Bold";
-	src: local("Biro Script Plus Bold"),
-		url("src/styles/utils/fonts/BiroScript/BiroScriptPlus-Bold.ttf");
+	font-family: "Biro Script Plus Bold US";
+	src: url("/src/styles/utils/fonts/BiroScript/BiroScriptUSPlus-Bold.eot");
+	src: local("Biro Script Plus Bold US"), local("BiroScriptUSPlus-Bold"),
+		url("/src/styles/utils/fonts/BiroScript/BiroScriptUSPlus-Bold.eot")
+			format("embedded-opentype"),
+		url("/src/styles/utils/fonts/BiroScript/BiroScriptUSPlus-Bold.woff2")
+			format("woff2"),
+		url("/src/styles/utils/fonts/BiroScript/BiroScriptUSPlus-Bold.woff")
+			format("woff"),
+		url("/src/styles/utils/fonts/BiroScript/BiroScriptUSPlus-Bold.ttf")
+			format("truetype");
 	font-weight: bold;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: "Biro Script Plus";
-	src: local("Biro Script Plus"), local("BiroScriptPlus"),
-		url("src/styles/utils/fonts/BiroScript/BiroScriptPlus.ttf");
+	src: url("/src/styles/utils/fonts/BiroScript/BiroScriptPlus-Bold.eot");
+	src: local("Biro Script Plus Bold"), local("BiroScriptPlus-Bold"),
+		url("/src/styles/utils/fonts/BiroScript/BiroScriptPlus-Bold.eot")
+			format("embedded-opentype"),
+		url("/src/styles/utils/fonts/BiroScript/BiroScriptPlus-Bold.woff2")
+			format("woff2"),
+		url("/src/styles/utils/fonts/BiroScript/BiroScriptPlus-Bold.woff")
+			format("woff"),
+		url("/src/styles/utils/fonts/BiroScript/BiroScriptPlus-Bold.ttf")
+			format("truetype");
 	font-weight: bold;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: "Biro Script Plus Sloppy";
+	src: url("/src/styles/utils/fonts/BiroScript/BiroScriptPlus-Sloppy.eot");
 	src: local("Biro Script Plus Sloppy"), local("BiroScriptPlus-Sloppy"),
-		url("src/styles/utils/fonts/BiroScript/BiroScriptPlus-Sloppy.ttf");
+		url("/src/styles/utils/fonts/BiroScript/BiroScriptPlus-Sloppy.eot")
+			format("embedded-opentype"),
+		url("/src/styles/utils/fonts/BiroScript/BiroScriptPlus-Sloppy.woff2")
+			format("woff2"),
+		url("/src/styles/utils/fonts/BiroScript/BiroScriptPlus-Sloppy.woff")
+			format("woff"),
+		url("src/styles/utils/fonts/BiroScript/BiroScriptPlus-Sloppy.ttf")
+			format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Biro Script Plus";
+	src: url("/src/styles/utils/fonts/BiroScript/BiroScriptPlus.eot");
+	src: local("Biro Script Plus"), local("BiroScriptPlus"),
+		url("/src/styles/utils/fonts/BiroScript/BiroScriptPlus.eot")
+			format("embedded-opentype"),
+		url("/src/styles/utils/fonts/BiroScript/BiroScriptPlus.woff2")
+			format("woff2"),
+		url("/src/styles/utils/fonts/BiroScript/BiroScriptPlus.woff") format("woff"),
+		url("/src/styles/utils/fonts/BiroScript/BiroScriptPlus.ttf")
+			format("truetype");
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: "Biro Script Plus Sloppy US";
+	src: url("/src/styles/utils/fonts/BiroScript/BiroScriptUSPlus-Sloppy.eot");
 	src: local("Biro Script Plus Sloppy US"), local("BiroScriptUSPlus-Sloppy"),
-		url("src/styles/utils/fonts/BiroScript/BiroScriptUSPlus-Sloppy.ttf");
+		url("/src/styles/utils/fonts/BiroScript/BiroScriptUSPlus-Sloppy.eot")
+			format("embedded-opentype"),
+		url("/src/styles/utils/fonts/BiroScript/BiroScriptUSPlus-Sloppy.woff2")
+			format("woff2"),
+		url("/src/styles/utils/fonts/BiroScript/BiroScriptUSPlus-Sloppy.woff")
+			format("woff"),
+		url("/src/styles/utils/fonts/BiroScript/BiroScriptUSPlus-Sloppy.ttf")
+			format("truetype");
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: "Biro Script Plus US Regular";
+	font-family: "Biro Script Plus US";
+	src: url("/src/styles/utils/fonts/BiroScript/BiroScriptUSPlus-Regular.eot");
 	src: local("Biro Script Plus US"), local("BiroScriptUSPlus-Regular"),
-		url("src/styles/utils/fonts/BiroScript/BiroScriptUSPlus-Regular.ttf");
+		url("/src/styles/utils/fonts/BiroScript/BiroScriptUSPlus-Regular.eot")
+			format("embedded-opentype"),
+		url("/src/styles/utils/fonts/BiroScript/BiroScriptUSPlus-Regular.woff2")
+			format("woff2"),
+		url("/src/styles/utils/fonts/BiroScript/BiroScriptUSPlus-Regular.woff")
+			format("woff"),
+		url("/src/styles/utils/fonts/BiroScript/BiroScriptUSPlus-Regular.ttf")
+			format("truetype");
 	font-weight: normal;
-	font-style: normal;
-}
-@font-face {
-	font-family: "Biro Script Plus Bold US";
-	src: local("Biro Script Plus Bold US"), local("BiroScriptUSPlus-Bold"),
-		url("src/styles/utils/fonts/BiroScript/BiroScriptUSPlus-Bold.ttf");
-	font-weight: bold;
 	font-style: normal;
 }
 
 // 	font-family: 'MessinaSansMono';
 @font-face {
-	font-family: "Messina Sans Mono SemiBold";
+	font-family: "Messina Sans Mono";
+	src: url("/src/styles/utils/fonts/MessinaSans/MessinaSansMono-SemiBold.eot");
 	src: local("Messina Sans Mono SemiBold"), local("MessinaSansMono-SemiBold"),
-		url("src/styles/utils/fonts/MessinaSans/MessinaSansMono-SemiBold.ttf");
+		url("/src/styles/utils/fonts/MessinaSans/MessinaSansMono-SemiBold.eot")
+			format("embedded-opentype"),
+		url("/src/styles/utils/fonts/MessinaSans/MessinaSansMono-SemiBold.woff2")
+			format("woff2"),
+		url("/src/styles/utils/fonts/MessinaSans/MessinaSansMono-SemiBold.woff")
+			format("woff"),
+		url("/src/styles/utils/fonts/MessinaSans/MessinaSansMono-SemiBold.ttf")
+			format("truetype");
 	font-weight: 600;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: "Messina Sans Mono Light";
-	src: url("MessinaSansMono-Light.eot");
+	font-family: "Messina Sans Mono";
+	src: url("/src/styles/utils/fonts/MessinaSans/MessinaSansMono-Light.eot");
 	src: local("Messina Sans Mono Light"), local("MessinaSansMono-Light"),
-		url("src/styles/utils/fonts/MessinaSans/MessinaSansMono-Light.ttf");
+		url("/src/styles/utils/fonts/MessinaSans/MessinaSansMono-Light.eot")
+			format("embedded-opentype"),
+		url("/src/styles/utils/fonts/MessinaSans/MessinaSansMono-Light.woff2")
+			format("woff2"),
+		url("/src/styles/utils/fonts/MessinaSans/MessinaSansMono-Light.woff")
+			format("woff"),
+		url("/src/styles/utils/fonts/MessinaSans/MessinaSansMono-Light.ttf")
+			format("truetype");
 	font-weight: 300;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: "Messina Sans Mono Book";
-	src: url("MessinaSansMono-Book.eot");
+	src: url("/src/styles/utils/fonts/MessinaSans/MessinaSansMono-Book.eot");
 	src: local("Messina Sans Mono Book"), local("MessinaSansMono-Book"),
-		url("src/styles/utils/fonts/MessinaSans/MessinaSansMono-Book.ttf");
+		url("/src/styles/utils/fonts/MessinaSans/MessinaSansMono-Book.eot")
+			format("embedded-opentype"),
+		url("/src/styles/utils/fonts/MessinaSans/MessinaSansMono-Book.woff2")
+			format("woff2"),
+		url("/src/styles/utils/fonts/MessinaSans/MessinaSansMono-Book.woff")
+			format("woff"),
+		url("/src/styles/utils/fonts/MessinaSans/MessinaSansMono-Book.ttf")
+			format("truetype");
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: "Messina Sans Mono Bold";
-	src: url("MessinaSansMono-Bold.eot");
+	font-family: "Messina Sans Mono";
+	src: url("/src/styles/utils/fonts/MessinaSans/MessinaSansMono-Bold.eot");
 	src: local("Messina Sans Mono Bold"), local("MessinaSansMono-Bold"),
-		url("src/styles/utils/fonts/MessinaSans/MessinaSansMono-Bold.ttf");
+		url("/src/styles/utils/fonts/MessinaSans/MessinaSansMono-Bold.eot")
+			format("embedded-opentype"),
+		url("/src/styles/utils/fonts/MessinaSans/MessinaSansMono-Bold.woff2")
+			format("woff2"),
+		url("/src/styles/utils/fonts/MessinaSans/MessinaSansMono-Bold.woff")
+			format("woff"),
+		url("/src/styles/utils/fonts/MessinaSans/MessinaSansMono-Bold.ttf")
+			format("truetype");
 	font-weight: bold;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: "Messina Sans Mono Regular";
-	src: url("MessinaSansMono-Regular.eot");
+	font-family: "Messina Sans Mono";
+	src: url("/src/styles/utils/fonts/MessinaSans/MessinaSansMono-Regular.eot");
 	src: local("Messina Sans Mono Regular"), local("MessinaSansMono-Regular"),
-		url("src/styles/utils/fonts/MessinaSans/MessinaSansMono-Regular.ttf");
+		url("/src/styles/utils/fonts/MessinaSans/MessinaSansMono-Regular.eot")
+			format("embedded-opentype"),
+		url("/src/styles/utils/fonts/MessinaSans/MessinaSansMono-Regular.woff2")
+			format("woff2"),
+		url("/src/styles/utils/fonts/MessinaSans/MessinaSansMono-Regular.woff")
+			format("woff"),
+		url("/src/styles/utils/fonts/MessinaSans/MessinaSansMono-Regular.ttf")
+			format("truetype");
 	font-weight: normal;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: "Messina Sans Mono Black";
-	src: url("src/styles/utils/fonts/MessinaSans/MessinaSansMono-Black.woff");
-	src: local("Messina Sans Mono Black"), local("MessinaSansMono-Black"),
-		url("src/styles/utils/fonts/MessinaSans/MessinaSansMono-Black.woff");
-	font-weight: 900;
 	font-style: normal;
 }
 

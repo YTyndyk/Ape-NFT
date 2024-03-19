@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'RightGroteskCompactBlack';
+    src: url('fonts/RightGroteskCompactBlack.eot');
+    src: url('fonts/RightGroteskCompactBlack.eot') format('embedded-opentype'),
+         url('fonts/RightGroteskCompactBlack.woff2') format('woff2'),
+         url('fonts/RightGroteskCompactBlack.woff') format('woff'),
+         url('fonts/RightGroteskCompactBlack.ttf') format('truetype'),
+         url('fonts/RightGroteskCompactBlack.svg#RightGroteskCompactBlack') format('svg');
+}
