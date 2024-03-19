@@ -1,0 +1,57 @@
+.header {
+	border-radius: 12px;
+	min-width: 354px;
+	height: 100vh;
+	margin: 54px 8px;
+	background-color: var(--background-color-hero);
+
+	@media screen and (min-width: 768px) {
+		height: 421px;
+		padding-left: 16px;
+		padding-right: 16px;
+	}
+
+	@media screen and (min-width: 1280px) {
+		height: 720px;
+		margin: 16px;
+	}
+}
+.navigation {
+	display: flex;
+	justify-content: space-between;
+}
+.logo {
+	display: block;
+	width: 48px;
+	height: 32px;
+	padding-top: 16px;
+	padding-left: 8px;
+}
+
+.btnMenu {
+	padding-top: 8px;
+	background-color: var(--background-blur);
+	align-items: center;
+	width: 48px;
+	height: 48px;
+	color: var(--text-color-black);
+	border-radius: 8px;
+	font-family: "Messina Sans Mono";
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 1.17;
+	padding: 17px 8.5px;
+}
+.navMenu {
+	background-color: var(--background-blur);
+	align-items: center;
+	width: 48px;
+	height: 48px;
+	color: var(--text-color-black);
+	border-radius: 8px;
+	font-family: "Messina Sans Mono";
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 1.17;
+	padding: 17px 8.5px;
+}
