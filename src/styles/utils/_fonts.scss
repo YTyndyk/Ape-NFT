@@ -134,15 +134,15 @@
 
 @font-face {
 	font-family: "Messina Sans Mono";
-	src: url("src/styles/utils/fonts/MessinaSans/MessinaSansMono-Black.eot");
+	src: url("/src/styles/utils/fonts/MessinaSans/MessinaSansMono-Black.eot");
 	src: local("Messina Sans Mono Black"), local("MessinaSansMono-Black"),
-		url("src/styles/utils/fonts/MessinaSans/MessinaSansMono-Black.eot")
+		url("/src/styles/utils/fonts/MessinaSans/MessinaSansMono-Black.eot")
 			format("embedded-opentype"),
-		url("src/styles/utils/fonts/MessinaSans/MessinaSansMono-Black.woff2")
+		url("/src/styles/utils/fonts/MessinaSans/MessinaSansMono-Black.woff2")
 			format("woff2"),
-		url("src/styles/utils/fonts/MessinaSans/MessinaSansMono-Black.woff")
+		url("/src/styles/utils/fonts/MessinaSans/MessinaSansMono-Black.woff")
 			format("woff"),
-		url("src/styles/utils/fonts/MessinaSans/MessinaSansMono-Black.ttf")
+		url("/src/styles/utils/fonts/MessinaSans/MessinaSansMono-Black.ttf")
 			format("truetype");
 	font-weight: 900;
 	font-style: normal;
