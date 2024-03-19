@@ -1,4 +1,3 @@
-// import "./App.css";
 import Header from "./sections/Header/Header";
 import Hero from "./sections/Hero/Hero";
 import About from "./sections/About/About";
