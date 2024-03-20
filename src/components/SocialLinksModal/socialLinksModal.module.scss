@@ -1,0 +1,14 @@
+.socialLinksModal {
+	display: flex;
+	flex-direction: column;
+	justify-content: end;
+	align-items: end;
+	gap: 8px;
+}
+.link {
+	margin-right: 16px;
+	background-color: var(--background-buttons-modal);
+	border-radius: 8px;
+	padding: 16px;
+	cursor: pointer;
+}

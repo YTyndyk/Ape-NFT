@@ -1,51 +1,68 @@
-// import { useState } from "react";
-import { Link } from "react-router-dom";
-import { Logo } from "../../assets/icons";
-import { socialLinks } from "../../constants/index";
-
+import { useState, useEffect } from "react";
+import { Logo, LogoBig } from "../../assets/icons";
+// import { navLinks } from "../../constants/index";
+import Modal from "../../components/Modal/Modal";
+import SocialLinks from "../../components/SocialLinks/SocialLinks";
+import Navigation from "../../components/Navigation/Navigation";
 import styles from "./header.module.scss";
 
 const Header = () => {
-	// const [activeLink, setActiveLink] = useState("home");
-	// const [toggle, setToggle] = useState(false);
-	// const handleLinkClick = (label) => {
-	// 	setActiveLink(label);
-	// };
+	const [activeLink, setActiveLink] = useState("home");
+	const [isWideScreen, setIsWideScreen] = useState(window.innerWidth >= 1280);
+	const [modalOpen, setModalOpen] = useState(false);
+
+	useEffect(() => {
+		const handleResize = () => {
+			setIsWideScreen(window.innerWidth >= 1280);
+		};
+
+		window.addEventListener("resize", handleResize);
+
+		return () => {
+			window.removeEventListener("resize", handleResize);
+		};
+	}, []);
+
+	const logoIcon = isWideScreen ? LogoBig : Logo;
+
+	const handleLinkClick = (label) => {
+		setActiveLink(label);
+	};
+
+	const showModal = () => {
+		setModalOpen(true);
+	};
+
+	const closeModal = () => {
+		setModalOpen(false);
+	};
+
 	return (
 		<header className={styles.header}>
 			<nav className={styles.navigation}>
 				<a href="/">
-					<img src={Logo} alt="logo" className="styles.logo" />
+					<img src={logoIcon} alt="logo" />
 				</a>
-				<button className={styles.btnMenu}>MENU</button>
-
-				{/* <ul hidden>
+				<Navigation handleLinkClick={handleLinkClick} />
+				{/* <ul className={styles.pageSection}>
 					{navLinks.map((item) => (
-						<li key={item.label}>
-							<button className={styles.navMenu}>
-								<a
-									href={item.href}
-									className={`font-montserrat leading-normal text-lg hover:text-coral-red ${
-										activeLink === item.label
-											? "text-coral-red"
-											: "text-slate-gray"
-									}`}
-									onClick={() => handleLinkClick(item.label)}
-								>
-									{item.label}
-								</a>
-							</button>
+						<li key={item.label} className={styles.navMenu}>
+							<a href={item.href} onClick={() => handleLinkClick(item.label)}>
+								{item.label}
+							</a>
 						</li>
 					))}
+					
 				</ul> */}
+				{/* <button className={styles.btnClose}>CLOSE</button> */}
+				<button className={styles.btnMenu} onClick={showModal}>
+					MENU
+				</button>
 			</nav>
-			<div className={styles.socialLinks}>
-				{socialLinks.map((item) => (
-					<Link key={item.name} to={item.link} target="_blank">
-						<img src={item.iconUrl} alt={item.name} className={styles.link} />
-					</Link>
-				))}
-			</div>
+			<SocialLinks />
+			{modalOpen && (
+				<Modal close={closeModal} handleLinkClick={handleLinkClick} />
+			)}
 		</header>
 	);
 };

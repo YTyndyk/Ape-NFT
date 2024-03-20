@@ -1,7 +1,13 @@
-import { discord, LogomarkBlue, logo1 } from "../assets/icons";
+import {
+	discord,
+	LogomarkBlue,
+	logo1,
+	discordWhite,
+	logoTwitterWhite,
+	LogomarkWhite,
+} from "../assets/icons";
 
 export const navLinks = [
-	{ href: "#home", label: "Home" },
 	{ href: "#about", label: "ABOUT" },
 	{ href: "#m-map", label: "M-MAP" },
 	{ href: "#faq", label: "FAQ" },
@@ -23,6 +29,23 @@ export const socialLinks = [
 	{
 		name: "Twitter",
 		iconUrl: logo1,
+		link: "https://twitter.com/",
+	},
+];
+export const socialLinksModal = [
+	{
+		name: "Discord",
+		iconUrl: discordWhite,
+		link: "https://discord.com/",
+	},
+	{
+		name: "OpenSea",
+		iconUrl: LogomarkWhite,
+		link: "https://opensea.io",
+	},
+	{
+		name: "Twitter",
+		iconUrl: logoTwitterWhite,
 		link: "https://twitter.com/",
 	},
 ];

@@ -1,0 +1,22 @@
+.socialLinks {
+	display: flex;
+	flex-direction: column;
+	justify-content: end;
+	align-items: end;
+	gap: 8px;
+
+	@media screen and (min-width: 1280px) {
+		gap: 16px;
+	}
+}
+.link {
+	background-color: var(--background-blur);
+	border-radius: 8px;
+	padding: 12px;
+	cursor: pointer;
+
+	@media screen and (min-width: 1280px) {
+		padding: 28px;
+		border-radius: 12px;
+	}
+}

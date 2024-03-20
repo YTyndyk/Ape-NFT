@@ -9,24 +9,20 @@
 	background-color: var(--background-color-hero);
 
 	@media screen and (min-width: 768px) {
-		// height: 421px;
-		padding-left: 16px;
-		padding-right: 16px;
+		padding-left: 12px;
+		padding-right: 12px;
+		margin-right: 16px;
+		margin-left: 16px;
 	}
 
 	@media screen and (min-width: 1280px) {
-		// height: 720px;
-		margin: 16px;
+		padding: 24px;
 	}
 }
 .navigation {
 	display: flex;
 	justify-content: space-between;
 	justify-items: center;
-}
-.logo {
-	width: 48px;
-	height: 32px;
 }
 
 .btnMenu {
@@ -44,30 +40,74 @@
 	padding: 17px 8.5px;
 	cursor: pointer;
 	margin-bottom: 8px;
+
+	@media screen and (min-width: 1280px) {
+		display: none;
+	}
 }
-.socialLinks {
-	display: flex;
-	flex-direction: column;
-	justify-content: end;
-	align-items: end;
-	gap: 8px;
-}
-.link {
-	background-color: var(--background-blur);
-	border-radius: 8px;
-	padding: 12px;
-	cursor: pointer;
-}
-// .navMenu {
+// .btnClose {
+// 	padding-top: 8px;
 // 	background-color: var(--background-blur);
 // 	align-items: center;
-// 	width: 48px;
-// 	height: 48px;
 // 	color: var(--text-color-black);
+// 	border-top-right-radius: 12px;
+// 	border-bottom-right-radius: 12px;
+// 	border-top-left-radius: 0;
+// 	border-bottom-left-radius: 0;
+// 	font-family: "Messina Sans Mono";
+// 	font-weight: 500;
+// 	font-size: 16px;
+// 	line-height: 1.19;
+// 	cursor: pointer;
+// 	padding: 30.5px 19.5px;
+// 	margin-bottom: 16px;
+// }
+// .socialLinks {
+// 	display: flex;
+// 	flex-direction: column;
+// 	justify-content: end;
+// 	align-items: end;
+// 	gap: 8px;
+
+// 	@media screen and (min-width: 1280px) {
+// 		gap: 16px;
+// 	}
+// }
+// .link {
+// 	background-color: var(--background-blur);
 // 	border-radius: 8px;
+// 	padding: 12px;
+// 	cursor: pointer;
+
+// 	@media screen and (min-width: 1280px) {
+// 		padding: 28px;
+// 		border-radius: 12px;
+// 	}
+// }
+// .pageSection {
+// 	display: flex;
+// 	flex-direction: row;
+// 	border-radius: 12px;
+// 	@media screen and (max-width: 1280px) {
+// 		display: none;
+// 	}
+// 	:first-child {
+// 		border-top-left-radius: 12px;
+// 		border-bottom-left-radius: 12px;
+// 	}
+// 	// :last-child {
+// 	// 	border-top-right-radius: 12px;
+// 	// 	border-bottom-right-radius: 12px;
+// 	// }
+// }
+// .navMenu {
+// 	background-color: var(--background-blur);
+// 	display: block;
+// 	color: var(--text-color-black);
 // 	font-family: "Messina Sans Mono";
 // 	font-weight: 600;
-// 	font-size: 12px;
-// 	line-height: 1.17;
-// 	padding: 17px 8.5px;
+// 	font-size: 16px;
+// 	line-height: 1.19;
+// 	padding: 30.5px 19.5px;
+// 	margin-bottom: 16px;
 // }

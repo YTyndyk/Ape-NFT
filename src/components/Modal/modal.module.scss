@@ -1,0 +1,60 @@
+.overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	justify-content: space-between;
+
+	@media screen and (max-width: 768px) {
+		background-color: var(--overlay-color);
+	}
+	@media screen and (min-width: 768px) {
+		display: none;
+	}
+}
+.logoWhite {
+	display: flex;
+	justify-content: space-between;
+	padding-left: 16px;
+	padding-top: 70px;
+}
+.btnCloseModal {
+	padding-right: 16px;
+	background-color: var(--background-buttons-modal);
+	align-items: center;
+	color: var(--text-color-white);
+	border-radius: 8px;
+	font-family: "Messina Sans Mono";
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 1.17;
+	padding: 17px 5px;
+	cursor: pointer;
+	margin-bottom: 8px;
+	margin-right: 16px;
+}
+.navigationMenu {
+	list-style: none; /* Видалити маркери списку */
+	padding: 0; /* Видалити внутрішні відступи */
+	display: flex; /* Встановлюємо властивість display на flex */
+	justify-content: center; /* Центруємо елементи по горизонталі */
+	z-index: 100;
+	flex-wrap: wrap; /* Заворачуємо елементи на новий рядок, якщо вони не вміщаються */
+}
+.linkPage {
+	color: var(--text-color-white);
+	margin: 10px;
+}
+.modal {
+	background-color: var(--overlay-color);
+	min-width: 100%;
+
+	position: relative;
+}
+.qwe {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
