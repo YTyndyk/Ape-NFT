@@ -36,25 +36,43 @@
 	margin-right: 16px;
 }
 .navigationMenu {
-	list-style: none; /* Видалити маркери списку */
-	padding: 0; /* Видалити внутрішні відступи */
-	display: flex; /* Встановлюємо властивість display на flex */
-	justify-content: center; /* Центруємо елементи по горизонталі */
-	z-index: 100;
-	flex-wrap: wrap; /* Заворачуємо елементи на новий рядок, якщо вони не вміщаються */
+	list-style: none;
+	display: flex;
+	justify-content: center;
 }
 .linkPage {
+	font-family: "Messina Sans Mono";
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 1.21;
 	color: var(--text-color-white);
-	margin: 10px;
+	padding-bottom: 22.5px;
 }
 .modal {
 	background-color: var(--overlay-color);
 	min-width: 100%;
-
 	position: relative;
 }
-.qwe {
+.section {
 	position: absolute;
-	top: 50%;
-	left: 50%;
+	display: flex;
+	flex-direction: column;
+
+	gap: 16px;
+
+	left: 27%;
+	top: 20%;
+}
+.rights {
+	color: var(--text-color-white);
+	font-family: "Messina Sans Mono";
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 1.17;
+	display: flex;
+	justify-content: center;
+	margin-top: 77px;
+	text-transform: uppercase;
+	width: 216px;
+	text-align: center;
 }

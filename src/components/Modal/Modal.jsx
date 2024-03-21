@@ -34,7 +34,7 @@ const Modal = ({ close, handleLinkClick }) => {
 
 				<ul>
 					<SocialLinksModal />
-					<div className={styles.qwe}>
+					<div className={styles.section}>
 						{navLinks.map((item) => (
 							<li key={item.label} className={styles.navigationMenu}>
 								<a
@@ -46,6 +46,9 @@ const Modal = ({ close, handleLinkClick }) => {
 								</a>
 							</li>
 						))}
+						<p className={styles.rights}>
+							© Yacht ape 2024 all rights reserved
+						</p>
 					</div>
 				</ul>
 			</div>

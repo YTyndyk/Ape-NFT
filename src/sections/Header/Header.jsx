@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
-import { Logo, LogoBig } from "../../assets/icons";
-// import { navLinks } from "../../constants/index";
+import { Logo } from "../../assets/icons";
 import Modal from "../../components/Modal/Modal";
 import SocialLinks from "../../components/SocialLinks/SocialLinks";
 import Navigation from "../../components/Navigation/Navigation";
@@ -8,12 +7,13 @@ import styles from "./header.module.scss";
 
 const Header = () => {
 	const [activeLink, setActiveLink] = useState("home");
-	const [isWideScreen, setIsWideScreen] = useState(window.innerWidth >= 1280);
+	const [isWideScreen, setIsWideScreen] = useState(window.innerWidth >= 768);
 	const [modalOpen, setModalOpen] = useState(false);
+	const [menuOpen, setMenuOpen] = useState(false);
 
 	useEffect(() => {
 		const handleResize = () => {
-			setIsWideScreen(window.innerWidth >= 1280);
+			setIsWideScreen(window.innerWidth >= 768);
 		};
 
 		window.addEventListener("resize", handleResize);
@@ -23,10 +23,15 @@ const Header = () => {
 		};
 	}, []);
 
-	const logoIcon = isWideScreen ? LogoBig : Logo;
-
 	const handleLinkClick = (label) => {
 		setActiveLink(label);
+	};
+
+	const handleMenuClick = () => {
+		setMenuOpen(!menuOpen);
+	};
+	const handleCloseClick = () => {
+		setMenuOpen(false);
 	};
 
 	const showModal = () => {
@@ -41,23 +46,28 @@ const Header = () => {
 		<header className={styles.header}>
 			<nav className={styles.navigation}>
 				<a href="/">
-					<img src={logoIcon} alt="logo" />
+					<img src={Logo} alt="logo" className={styles.logo} />
 				</a>
-				<Navigation handleLinkClick={handleLinkClick} />
-				{/* <ul className={styles.pageSection}>
-					{navLinks.map((item) => (
-						<li key={item.label} className={styles.navMenu}>
-							<a href={item.href} onClick={() => handleLinkClick(item.label)}>
-								{item.label}
-							</a>
-						</li>
-					))}
-					
-				</ul> */}
-				{/* <button className={styles.btnClose}>CLOSE</button> */}
-				<button className={styles.btnMenu} onClick={showModal}>
-					MENU
-				</button>
+				{isWideScreen ? (
+					<>
+						{menuOpen ? null : (
+							<button className={styles.btnMenu} onClick={handleMenuClick}>
+								MENU
+							</button>
+						)}
+					</>
+				) : (
+					<button className={styles.btnMenu} onClick={showModal}>
+						MENU
+					</button>
+				)}
+
+				{menuOpen && (
+					<Navigation
+						handleLinkClick={handleLinkClick}
+						handleCloseClick={handleCloseClick}
+					/>
+				)}
 			</nav>
 			<SocialLinks />
 			{modalOpen && (

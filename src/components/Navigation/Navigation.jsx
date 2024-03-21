@@ -1,7 +1,7 @@
 import { navLinks } from "../../constants/index";
 import styles from "./navigation.module.scss";
 
-const Navigation = ({ handleLinkClick }) => {
+const Navigation = ({ handleLinkClick, handleCloseClick }) => {
 	return (
 		<ul className={styles.pageSection}>
 			{navLinks.map((item) => (
@@ -15,7 +15,9 @@ const Navigation = ({ handleLinkClick }) => {
 					</a>
 				</li>
 			))}
-			<button className={styles.btnClose}>CLOSE</button>
+			<button className={styles.btnClose} onClick={handleCloseClick}>
+				CLOSE
+			</button>
 		</ul>
 	);
 };

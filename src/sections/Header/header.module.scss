@@ -42,72 +42,27 @@
 	margin-bottom: 8px;
 
 	@media screen and (min-width: 1280px) {
-		display: none;
+		width: 80px;
+		height: 80px;
+		border-radius: 12px;
+		font-size: 16px;
+		line-height: 1.19;
 	}
 }
-// .btnClose {
-// 	padding-top: 8px;
-// 	background-color: var(--background-blur);
-// 	align-items: center;
-// 	color: var(--text-color-black);
-// 	border-top-right-radius: 12px;
-// 	border-bottom-right-radius: 12px;
-// 	border-top-left-radius: 0;
-// 	border-bottom-left-radius: 0;
-// 	font-family: "Messina Sans Mono";
-// 	font-weight: 500;
-// 	font-size: 16px;
-// 	line-height: 1.19;
-// 	cursor: pointer;
-// 	padding: 30.5px 19.5px;
-// 	margin-bottom: 16px;
-// }
-// .socialLinks {
-// 	display: flex;
-// 	flex-direction: column;
-// 	justify-content: end;
-// 	align-items: end;
-// 	gap: 8px;
+@media (min-width: 1280px) {
+	.logo {
+		display: none;
+	}
 
-// 	@media screen and (min-width: 1280px) {
-// 		gap: 16px;
-// 	}
-// }
-// .link {
-// 	background-color: var(--background-blur);
-// 	border-radius: 8px;
-// 	padding: 12px;
-// 	cursor: pointer;
-
-// 	@media screen and (min-width: 1280px) {
-// 		padding: 28px;
-// 		border-radius: 12px;
-// 	}
-// }
-// .pageSection {
-// 	display: flex;
-// 	flex-direction: row;
-// 	border-radius: 12px;
-// 	@media screen and (max-width: 1280px) {
-// 		display: none;
-// 	}
-// 	:first-child {
-// 		border-top-left-radius: 12px;
-// 		border-bottom-left-radius: 12px;
-// 	}
-// 	// :last-child {
-// 	// 	border-top-right-radius: 12px;
-// 	// 	border-bottom-right-radius: 12px;
-// 	// }
-// }
-// .navMenu {
-// 	background-color: var(--background-blur);
-// 	display: block;
-// 	color: var(--text-color-black);
-// 	font-family: "Messina Sans Mono";
-// 	font-weight: 600;
-// 	font-size: 16px;
-// 	line-height: 1.19;
-// 	padding: 30.5px 19.5px;
-// 	margin-bottom: 16px;
-// }
+	.header::before {
+		content: "";
+		display: block;
+		width: 72px;
+		height: 50px;
+		background-image: url("../../assets/icons/LogoBig.svg");
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+		position: absolute;
+	}
+}
